@@ -1,6 +1,6 @@
 <h1>Write a simple traffic light simulation using JavaScript and the 'config' variable below.</h1>
 
-<h2>The traffic light controls an intersection with multiple streets, see 'config.streetNames'. Only one street is given green light at any given time. This street lets 'config.numberOfCarsPassThroughIntersectionPerSecond' cars pass through the intersection.
+<h4>The traffic light controls an intersection with multiple streets, see 'config.streetNames'. Only one street is given green light at any given time. This street lets 'config.numberOfCarsPassThroughIntersectionPerSecond' cars pass through the intersection.
 
 For the switching green, these rules apply in declining priority:
 
@@ -12,10 +12,10 @@ For the switching green, these rules apply in declining priority:
 
 4. Rule: When all cars have passed through green, the street that has waited the longest and has cars queued should receive green.
 
-A function 'addCar(streetIndex)' is used to queue cars at the intersection. The function is called from somewhere else outside this scope. You can assume no thread related issues.</h2>
+A function 'addCar(streetIndex)' is used to queue cars at the intersection. The function is called from somewhere else outside this scope. You can assume no thread related issues.</h4>
 
 
-const config = {
+<h5>const config = {
   // A green phase must be at least this long
   minGreenDurationInMilliSeconds: 10000,
   // Every second this many cars go through the green light
@@ -27,3 +27,4 @@ const config = {
   // The streets for this intersection:
   streetNames: ['A', 'B', 'C'],
 }
+</h5>
